@@ -1,0 +1,11 @@
+<!-- templates/quoted.html -->
+{% extends "layout.html" %}
+
+{% block main %}
+    <h2>Stock Quote</h2>
+    <p>
+        A share of <strong>{{ stock["name"] }}</strong>
+        ({{ stock["symbol"] }}) costs
+        <strong>{{ stock["price"] | usd }}</strong>.
+    </p>
+{% endblock %}
